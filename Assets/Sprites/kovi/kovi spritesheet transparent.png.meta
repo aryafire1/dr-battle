@@ -1,0 +1,906 @@
+fileFormatVersion: 2
+guid: 0ea8c7691a136c648adae19b76465cf5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle left
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 676
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08649f3cfb6c8a04ea4f24d845112f02
+      internalID: 1108201133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front left walk 1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 676
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672ecb5c072cd7145a266fdd6c9f6b55
+      internalID: 2004659761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front left walk 2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 676
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd61c9609153ce49ba037f11eacaa9c
+      internalID: -468296700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back idle
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 676
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25d942963bf73b4eb2a8b896bc07301
+      internalID: 985410581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back walk 1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 678
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b76f7615eaef64fb83279ff0ddf3fe
+      internalID: -2019380286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back walk 2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 677
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee635dcbe88cd4945b0a776fc1ec0145
+      internalID: 745286709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle right
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 613
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9ec9c310e008647b365787c6a3c068
+      internalID: -1709299695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front right walk 1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 615
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bb59d43e06c0b419b9a77760518b98
+      internalID: 168577866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front right walk 2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 615
+        width: 20
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e62deb6b09e8943a3ebb09ec70b868
+      internalID: -1529264971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left walk idle
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 549
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf7a9e04d20f284ea94fd278337c40a
+      internalID: -1780259534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left walk 1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 549
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216a8380ff121264eadd62719e5c5574
+      internalID: -646834342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left walk 2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 549
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693378a75cb8e2b4d8377196f761c8c9
+      internalID: -1401230827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right idle
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 549
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f53a5ab7124bde4582ff001ff7ae161
+      internalID: -1314759311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right walk 1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 549
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37144f16686363543933c297358e4257
+      internalID: -1324583323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right walk 2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 549
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0aba2aa663297a47b5f3839e33d8768
+      internalID: -1282797499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battle 1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 615
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1312cb7cb2af14e917c7a3652168e2
+      internalID: 609436388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battle 2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 615
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4130027355f226d408c347a47aa742b4
+      internalID: -1908656034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battle 3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 615
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad381cad220ccf04792233bd169a93a6
+      internalID: 1700079194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: battle 4
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 615
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b001acfd686bc8646ba94acaeec4b8b0
+      internalID: 1846330249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 677
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f213e27e17c614284ac4b924e3ad5c
+      internalID: 606243083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 676
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7b47e0da69e2d4bb69cd32719d9f99
+      internalID: -1070144669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurt
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 676
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3995ef59b688b348b4563a52b246e98
+      internalID: -1276743286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: neutral
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 422
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccaff1072d4baf40a1e39d5c5a11cb6
+      internalID: -1322132552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: annoyed
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 422
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fbea2fef9565141a3ce4a493ae488c
+      internalID: -1708667355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 422
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1819b644c5f4b478edf556e6a08bd2
+      internalID: -2023965855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interested
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 295
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aad5718537178b4092d4bfddc806a7c
+      internalID: 2080168000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smug
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 295
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c046e4168ee04f24ca8cd5de0049e61e
+      internalID: 572674728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happy
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 295
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f558ccdc3a8f82648b78ae35a531bc84
+      internalID: 1103892146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sinister
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 158
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338be913557a4f94aa1c4c0cb1aa333f
+      internalID: -262879957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: contemplating
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 158
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9714e0fef7c7394f9f13dadd76458a6
+      internalID: -121920887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pensive
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 158
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e4f914097175348bb0539a9e0cf5de
+      internalID: 229903143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: surprised
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 31
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1377811e36444ee42a053445340573d5
+      internalID: -866447081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scared
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 31
+        width: 112
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354cd0fbd999c9d4aa2ac0bd4aef5774
+      internalID: -937696180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3188868133ef0ba4891bbfc13374be1c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      angry: -2023965855
+      annoyed: -1708667355
+      attack 1: 606243083
+      attack 2: -1070144669
+      back idle: 985410581
+      back walk 1: -2019380286
+      back walk 2: 745286709
+      battle 1: 609436388
+      battle 2: -1908656034
+      battle 3: 1700079194
+      battle 4: 1846330249
+      contemplating: -121920887
+      front left walk 1: 2004659761
+      front left walk 2: -468296700
+      front right walk 1: 168577866
+      front right walk 2: -1529264971
+      happy: 1103892146
+      hurt: -1276743286
+      idle left: 1108201133
+      idle right: -1709299695
+      interested: 2080168000
+      kovi spritesheet transparent_26: -1151787079
+      kovi spritesheet transparent_28: -1215160608
+      kovi spritesheet transparent_29: 777086904
+      kovi spritesheet transparent_30: -278582109
+      kovi spritesheet transparent_31: -973056441
+      kovi spritesheet transparent_32: -1399589722
+      kovi spritesheet transparent_33: 405869260
+      kovi spritesheet transparent_34: -1178796830
+      kovi spritesheet transparent_35: 1138015003
+      kovi spritesheet transparent_36: 88369227
+      kovi spritesheet transparent_37: 378969155
+      kovi spritesheet transparent_38: -1923297685
+      kovi spritesheet transparent_39: 1454831050
+      kovi spritesheet transparent_40: -1567797382
+      kovi spritesheet transparent_41: -225773969
+      kovi spritesheet transparent_42: -100488058
+      kovi spritesheet transparent_43: -1412690341
+      kovi spritesheet transparent_44: 1401349488
+      kovi spritesheet transparent_45: -89909597
+      kovi spritesheet transparent_46: -636546853
+      kovi spritesheet transparent_47: -1088683620
+      kovi spritesheet transparent_48: 463939928
+      kovi spritesheet transparent_49: -311052855
+      kovi spritesheet transparent_50: -862124450
+      kovi spritesheet transparent_51: -446840270
+      kovi spritesheet transparent_52: -1152157190
+      kovi spritesheet transparent_53: 2057046442
+      kovi spritesheet transparent_54: -1412741024
+      kovi spritesheet transparent_55: -1180825880
+      kovi spritesheet transparent_56: 1640730285
+      kovi spritesheet transparent_57: 181203049
+      kovi spritesheet transparent_58: 649031695
+      kovi spritesheet transparent_59: -1728496719
+      kovi spritesheet transparent_60: -2088589447
+      kovi spritesheet transparent_61: 667639070
+      kovi spritesheet transparent_62: -741686599
+      kovi spritesheet transparent_63: -972265492
+      kovi spritesheet transparent_64: -649553114
+      kovi spritesheet transparent_65: 150642117
+      kovi spritesheet transparent_66: 1462961981
+      left walk 1: -646834342
+      left walk 2: -1401230827
+      left walk idle: -1780259534
+      neutral: -1322132552
+      pensive: 229903143
+      right idle: -1314759311
+      right walk 1: -1324583323
+      right walk 2: -1282797499
+      scared: -937696180
+      sinister: -262879957
+      smug: 572674728
+      surprised: -866447081
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
