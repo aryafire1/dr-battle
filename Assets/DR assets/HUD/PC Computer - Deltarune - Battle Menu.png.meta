@@ -144,10 +144,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ActSelect
+      name: MagicSelect
       rect:
         serializedVersion: 2
-        x: 1214
+        x: 1342
         y: 1664
         width: 31
         height: 32
@@ -207,12 +207,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ActionSelect
+      name: Fight
       rect:
         serializedVersion: 2
         x: 1182
         y: 1598
-        width: 159
+        width: 31
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -269,6 +269,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Magic
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1598
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8573e5adecd9e4c87b05428891d273
+      internalID: 1644158730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Defend
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1598
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacad7f8024959849bffc52418c94a29
+      internalID: -444117453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -280,11 +322,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ActSelect: -305107181
-      ActionSelect: 1606638440
+      Defend: -444117453
       DefendSelect: 594420056
+      Fight: 1606638440
       FightSelect: -1010529520
       KrisHUD: 674742848
+      Magic: 1644158730
+      MagicSelect: -305107181
       TPBarBase: -1049222530
       TPBarFull: -1630362056
   mipmapLimitGroupName: 
