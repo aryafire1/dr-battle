@@ -491,6 +491,8 @@ MonoBehaviour:
   actionButtons: {fileID: 1533892805}
   fightAction: {fileID: 1870723022}
   magicOption: {fileID: 1531731775}
+  hudReset: {fileID: 229226797}
+  magicUI: {fileID: 0}
 --- !u!1 &257053436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,10 +2953,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17352c1cc7ab4f54394f787173a72411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemy: {fileID: 0}
   Event_Open:
     m_PersistentCalls:
       m_Calls: []
   Event_YourTurn:
+    m_PersistentCalls:
+      m_Calls: []
+  Event_PlayerDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  Event_EnemyDamage:
     m_PersistentCalls:
       m_Calls: []
   playerAnim: {fileID: 257053438}
@@ -3202,7 +3212,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.599
+  m_Value: 0.055
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3241,6 +3251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderSpeed: 0.01
   sliderBar: {fileID: 1870723023}
+  target: 0.05
 --- !u!1 &1917570860
 GameObject:
   m_ObjectHideFlags: 0
