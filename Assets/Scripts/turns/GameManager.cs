@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public UnityEvent Event_Open;
     [HideInInspector] public UnityEvent<bool> Event_YourTurn;
+    [HideInInspector] public UnityEvent<float> Event_PlayerDamage, Event_EnemyDamage;
+
+    public Animator playerAnim, koviAnim;
 
     void Awake()
     {
@@ -18,10 +21,6 @@ public class GameManager : MonoBehaviour
         Event_YourTurn = new UnityEvent<bool>();
     }
 
-    public void Temp()
-    {
-        Event_YourTurn?.Invoke(false);
-        Debug.Log("temp test");
-    }
+
 
 }

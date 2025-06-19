@@ -278,7 +278,7 @@ TextureImporter:
         width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +299,7 @@ TextureImporter:
         width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,6 +307,48 @@ TextureImporter:
       bones: []
       spriteID: bacad7f8024959849bffc52418c94a29
       internalID: -444117453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack input
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1196
+        width: 127
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12629ae8efbcd44996a2101d1a8696f
+      internalID: -1239479625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack bar
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1431
+        width: 10
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b912360e92e3c5545a4f6e064607f0bf
+      internalID: -1355353477
       vertices: []
       indices: 
       edges: []
@@ -331,6 +373,8 @@ TextureImporter:
       MagicSelect: -305107181
       TPBarBase: -1049222530
       TPBarFull: -1630362056
+      attack bar: -1355353477
+      attack input: -1239479625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
