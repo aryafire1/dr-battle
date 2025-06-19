@@ -492,6 +492,7 @@ MonoBehaviour:
   fightAction: {fileID: 1870723022}
   magicOption: {fileID: 1531731775}
   hudReset: {fileID: 229226797}
+  fightClear: {fileID: 0}
   magicUI: {fileID: 0}
 --- !u!1 &257053436
 GameObject:
