@@ -13,13 +13,18 @@ public class FightSlider : MonoBehaviour
     {
         sliderBar.value = 0.5f;
         StartCoroutine(SlideDown());
-        Player.main.mouseEvent.AddListener(Callback);
-        Debug.Log("enabled");
+        if (Player.main != null)
+        {
+            Player.main.mouseEvent.AddListener(Callback);
+        }
     }
     void OnDisable()
     {
         StopAllCoroutines();
-        Player.main.mouseEvent.RemoveListener(Callback);
+        if (Player.main != null)
+        {
+            Player.main.mouseEvent.RemoveListener(Callback);
+        }
     }
 
     IEnumerator SlideDown()

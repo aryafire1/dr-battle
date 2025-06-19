@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerTurns : MonoBehaviour
 {
     public GameObject flavorText, actionButtons, fightAction, magicOption;
-    public UISelection hudReset, magicUI;
+    public UISelection hudReset, fightClear, magicUI;
 
     //turn reset whenever it's beginning of turn
     void OnEnable()
@@ -14,6 +14,8 @@ public class PlayerTurns : MonoBehaviour
         actionButtons.SetActive(true);
         fightAction.SetActive(false);
         magicOption.SetActive(false);
+
+        hudReset.SetSelection();
     }
 
     //button voids
@@ -23,7 +25,7 @@ public class PlayerTurns : MonoBehaviour
         actionButtons.SetActive(false);
         fightAction.SetActive(true);
 
-        hudReset.SetSelection();
+        
     }
     public void MagicSelect()
     {
