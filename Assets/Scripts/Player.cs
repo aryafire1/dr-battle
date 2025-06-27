@@ -8,6 +8,8 @@ using UnityEngine.InputSystem.Composites;
 public class Player : MonoBehaviour
 {
     public static Player main;
+    public Transform soul;
+    public float movementSpeed;
     public PlayerInput inputActions;
     public InputAction move, click;
 
@@ -43,6 +45,16 @@ public class Player : MonoBehaviour
         else
         {
             move.Disable();
+        }
+    }
+
+    void Update()
+    {
+        //i hate you void update
+        var v = move.ReadValue<Vector2>();
+        if (v != Vector2.zero)
+        {
+            soul.Translate(movementSpeed * Time.deltaTime * v);
         }
     }
 }

@@ -50,17 +50,24 @@ public class FightSlider : MonoBehaviour
 
     void Damage(float value)
     {
-        if (target < value + 0.01f && target > value - 0.01f)
+        int damage = GameManager.main.player.attack;
+
+        if (target < value + 0.011f && target > value - 0.011f)
         {
-            Debug.Log("crit");
+            damage = (int)(damage * ((1-value) * 10));
+            Debug.Log($"crit: {damage}");
         }
         else if (value > target)
         {
-            Debug.Log("hit high");
+            damage = (int)(damage * ((1 - value) * 8));
+            Debug.Log($"hit high: {damage}");
         }
         else if (value < target)
         {
-            Debug.Log("hit low");
+            Debug.Log($"hit low: {damage}");
         }
+
+        GameManager.main.Event_EnemyDamage?.Invoke(damage);
+        this.gameObject.SetActive(false);
     }
 }

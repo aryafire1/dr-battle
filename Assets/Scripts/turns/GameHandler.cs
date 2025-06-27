@@ -5,16 +5,17 @@ using TMPro;
 
 public class GameHandler : MonoBehaviour
 {
-    public GameObject playerHUD;
+    public GameObject playerHUD, playerBox;
     public TurnData[] turnList;
     public TMP_Text flavorText;
     public int index = 0;
 
     void Awake()
     {
-        if (playerHUD.activeSelf)
+        if (playerHUD.activeSelf || playerBox.activeSelf)
         {
             playerHUD.SetActive(false);
+            playerBox.SetActive(false);
         }
 
         for (int i = 0; i <= turnList.Length - 1; ++i)
@@ -33,6 +34,7 @@ public class GameHandler : MonoBehaviour
     {
         if (b)
         {
+            playerBox.SetActive(!b);
             playerHUD.SetActive(b);
             if (index >= turnList.Length)
             {
@@ -42,6 +44,7 @@ public class GameHandler : MonoBehaviour
         }
         else if (b == false)
         {
+            playerBox.SetActive(!b);
             playerHUD.SetActive(b);
         }
     }

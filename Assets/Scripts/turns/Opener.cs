@@ -29,6 +29,5 @@ public class Opener : MonoBehaviour
         }
         
         GameManager.main.Event_YourTurn?.Invoke(true);
-        Player.main.click.Disable();
     }
 }

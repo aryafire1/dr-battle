@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerData player;
     public EnemyData enemy;
+    [SerializeField] float turnDelay;
 
     [HideInInspector] public UnityEvent Event_Open;
     [HideInInspector] public UnityEvent<bool> Event_YourTurn;
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
 
         Event_Open = new UnityEvent();
         Event_YourTurn = new UnityEvent<bool>();
+        Event_EnemyDamage = new UnityEvent<float>();
+        Event_PlayerDamage = new UnityEvent<float>();
 
         Event_PlayerDamage.AddListener(PlayerDamage);
         Event_EnemyDamage.AddListener(EnemyDamage);
@@ -35,7 +38,14 @@ public class GameManager : MonoBehaviour
     void EnemyDamage(float damage)
     {
         enemy.health -= (int)damage;
-        //update ui
+        koviAnim.SetTrigger("hurt");
+        StartCoroutine(TurnDelay());
+    }
+
+    IEnumerator TurnDelay()
+    {
+        yield return new WaitForSeconds(turnDelay);
+        Event_YourTurn?.Invoke(false);
     }
 
 }
