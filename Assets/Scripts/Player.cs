@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     public UnityEvent mouseEvent;
 
+    Vector2 soulStart;
+
     void Awake()
     {
         main = this;
@@ -29,6 +31,8 @@ public class Player : MonoBehaviour
 
         click.Enable();
         click.performed += Click;
+
+        soulStart = soul.position;
     }
 
     void Click(InputAction.CallbackContext context)
