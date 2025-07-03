@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
     {
         if (b == false)
         {
+            soul.position = soulStart;
             move.Enable();
         }
         else
