@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerData player;
     public EnemyData enemy;
+    public Slider playerHealthUI, enemyHealthUI;
     [SerializeField] float turnDelay;
 
     [HideInInspector] public UnityEvent Event_Open;
@@ -30,15 +32,25 @@ public class GameManager : MonoBehaviour
         Event_EnemyDamage.AddListener(EnemyDamage);
     }
 
+    void Start()
+    {
+        playerHealthUI.maxValue = player.health;
+        playerHealthUI.value = player.health;
+
+        enemyHealthUI.maxValue = enemy.health;
+        enemyHealthUI.value = enemy.health;
+    }
+
     void PlayerDamage(float damage)
     {
         player.health -= (int)damage;
-        //update ui
+        playerHealthUI.maxValue = player.health; //ui update
     }
     void EnemyDamage(float damage)
     {
         enemy.health -= (int)damage;
         koviAnim.SetTrigger("hurt");
+        enemyHealthUI.value = enemy.health; //ui update
         StartCoroutine(TurnDelay());
     }
 

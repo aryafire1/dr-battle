@@ -6,7 +6,6 @@ using UnityEngine;
 public class TurnData
 {
     public int turn;
-    public float turnLength;
     public GameObject attack;
     public string flavorText;
 }
