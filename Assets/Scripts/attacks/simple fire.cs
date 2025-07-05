@@ -5,35 +5,38 @@ using UnityEngine;
 public class simplefire : AttackParent
 {
     public float bottom, top, frequency;
-    List<GameObject> bullets = new List<GameObject>();
+    public List<GameObject> bullets = new List<GameObject>();
+    int index;
 
-    void Start()
+    void OnEnable()
     {
-        GameManager.main.Event_YourTurn.AddListener(Callback);
+        base.OnEnable();
+
+        index = 0;
+        foreach (GameObject g in bullets)
+        {
+            g.SetActive(false);
+        }
+        StartCoroutine(Fire());
+    }
+    void OnDisable()
+    {
+        StopAllCoroutines();
     }
 
-    void Callback(bool b)
-    {
-        //stops turn
-        if (b)
-        {
-            StopAllCoroutines();
-            foreach (GameObject g in bullets)
-            {
-                Destroy(g);
-            }
-            bullets.Clear();
-        }
-
-        //starts turn
-        else if (b == false)
-        {
-            StartCoroutine(Fire());
-        }
-    }
     IEnumerator Fire()
     {
-        bullets.Add(Instantiate(selfRef, new Vector3(selfRef.transform.position.x, Random.Range(bottom, top), selfRef.transform.position.z), Quaternion.identity));
+        bullets[index].SetActive(true);
+        bullets[index].transform.position = new Vector2(selfRef.transform.position.x, Random.Range(bottom, top));
+        bullets[index].GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, 0);
+        if (index >= bullets.Count - 1)
+        {
+            index = 0;
+        }
+        else
+        {
+            index++;
+        }
         yield return new WaitForSeconds(frequency);
         StartCoroutine(Fire());
     }

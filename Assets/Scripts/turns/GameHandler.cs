@@ -10,8 +10,13 @@ public class GameHandler : MonoBehaviour
     public TMP_Text flavorText;
     public int index = 0;
 
+    bool gameStart;
+    Animator boxAnim;
+
     void Awake()
     {
+        boxAnim = playerBox.GetComponent<Animator>();
+
         playerHUD.SetActive(false);
         playerBox.SetActive(false);
         soul.SetActive(false);
@@ -32,20 +37,44 @@ public class GameHandler : MonoBehaviour
     {
         if (b)
         {
-            playerBox.SetActive(!b);
-            soul.SetActive(!b);
-            playerHUD.SetActive(b);
-            if (index >= turnList.Length)
+            if (gameStart == false)
             {
-                index = 0;
+                SetPlayerUI();
+                gameStart = true;
+                soul.SetActive(false);
             }
-            flavorText.text = turnList[index].flavorText;
+            else
+            {
+                GameManager.main.koviAnim.SetTrigger("escape");
+                boxAnim.SetTrigger("turnDone"); //triggers setplayerui in anim event
+                soul.SetActive(false);
+            }
         }
         else if (b == false)
         {
             playerBox.SetActive(!b);
             soul.SetActive(!b);
             playerHUD.SetActive(b);
+
+            //start attack
+            turnList[index].attack.SetActive(true);
+            GameManager.main.koviAnim.SetTrigger("attack");
+            GameManager.main.playerAnim.SetTrigger("idle");
+            if (index >= turnList.Length - 1)
+            {
+                index = 0;
+            }
+            else
+            {
+                index++;
+            }
         }
+    }
+
+    public void SetPlayerUI()
+    {
+        playerBox.SetActive(false);
+        playerHUD.SetActive(true);
+        flavorText.text = turnList[index].flavorText;
     }
 }

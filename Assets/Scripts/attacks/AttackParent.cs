@@ -5,31 +5,25 @@ using UnityEngine;
 public class AttackParent : MonoBehaviour
 {
     public int attackLength;
+    public float bulletSpeed;
 
-    [HideInInspector]
-    public GameObject selfRef;
+    [HideInInspector] public GameObject selfRef;
 
     void Awake()
     {
         selfRef = this.gameObject;
+        
     }
 
-    void Start()
+    protected void OnEnable()
     {
-        GameManager.main.Event_YourTurn.AddListener(Callback);
+        StartCoroutine(Countdown());
     }
 
-    void Callback(bool b)
-    {
-        //activated by false yourturn callback
-        if (b == false)
-        {
-            StartCoroutine(Wait());
-        }
-    }
-    IEnumerator Wait()
+    IEnumerator Countdown()
     {
         yield return new WaitForSeconds(attackLength);
         GameManager.main.Event_YourTurn?.Invoke(true);
+        selfRef.SetActive(false);
     }
 }

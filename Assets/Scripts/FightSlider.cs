@@ -50,6 +50,7 @@ public class FightSlider : MonoBehaviour
 
     void Damage(float value)
     {
+        GameManager.main.playerAnim.SetTrigger("attack");
         int damage = GameManager.main.player.attack;
 
         if (target < value + 0.011f && target > value - 0.011f)
