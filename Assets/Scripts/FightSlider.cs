@@ -29,7 +29,7 @@ public class FightSlider : MonoBehaviour
 
     IEnumerator SlideDown()
     {
-        yield return new WaitForSeconds(sliderSpeed * Time.deltaTime);
+        yield return new WaitForSeconds(sliderSpeed);
         sliderBar.value -= 0.01f;
         if (sliderBar.value > 0)
         {

@@ -19,6 +19,11 @@ public class UISelection : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        SetSelection();
+    }
+
     public void SetSelection()
     {
         if (eventSystem != null && selectable != null)

@@ -6,7 +6,7 @@ using TMPro;
 public class GameHandler : MonoBehaviour
 {
     public GameObject playerHUD, playerBox, soul;
-    public TurnData[] turnList;
+    public TurnData[] phase1;
     public TMP_Text flavorText;
     public int index = 0;
 
@@ -21,9 +21,9 @@ public class GameHandler : MonoBehaviour
         playerBox.SetActive(false);
         soul.SetActive(false);
 
-        for (int i = 0; i <= turnList.Length - 1; ++i)
+        for (int i = 0; i <= phase1.Length - 1; ++i)
         {
-            turnList[i].attack.SetActive(false);
+            phase1[i].attack.SetActive(false);
         }
     }
 
@@ -57,10 +57,10 @@ public class GameHandler : MonoBehaviour
             playerHUD.SetActive(b);
 
             //start attack
-            turnList[index].attack.SetActive(true);
+            phase1[index].attack.SetActive(true);
             GameManager.main.koviAnim.SetTrigger("attack");
             GameManager.main.playerAnim.SetTrigger("idle");
-            if (index >= turnList.Length - 1)
+            if (index >= phase1.Length - 1)
             {
                 index = 0;
             }
@@ -75,6 +75,6 @@ public class GameHandler : MonoBehaviour
     {
         playerBox.SetActive(false);
         playerHUD.SetActive(true);
-        flavorText.text = turnList[index].flavorText;
+        flavorText.text = phase1[index].flavorText;
     }
 }

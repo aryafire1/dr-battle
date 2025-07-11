@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackParent : MonoBehaviour
 {
     public int attackLength;
-    public float bulletSpeed;
+    public float bulletSpeed, damage;
 
     [HideInInspector] public GameObject selfRef;
 

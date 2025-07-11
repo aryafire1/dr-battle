@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
 
     void PlayerDamage(float damage)
     {
-        player.health -= (int)damage;
-        playerHealthUI.maxValue = player.health; //ui update
+        player.health -= (int)damage * enemy.attack;
+        playerHealthUI.value = player.health; //ui update
     }
     void EnemyDamage(float damage)
     {
