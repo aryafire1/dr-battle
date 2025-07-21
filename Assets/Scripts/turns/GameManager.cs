@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public UnityEvent Event_Open;
     [HideInInspector] public UnityEvent<bool> Event_YourTurn;
     [HideInInspector] public UnityEvent<float> Event_PlayerDamage, Event_EnemyDamage;
+    [HideInInspector] public bool phase1, phase2;
 
     public Animator playerAnim, koviAnim;
 
@@ -30,6 +31,9 @@ public class GameManager : MonoBehaviour
 
         Event_PlayerDamage.AddListener(PlayerDamage);
         Event_EnemyDamage.AddListener(EnemyDamage);
+
+        phase1 = true;
+        phase2 = false;
     }
 
     void Start()
@@ -51,6 +55,16 @@ public class GameManager : MonoBehaviour
         enemy.health -= (int)damage;
         koviAnim.SetTrigger("hurt");
         enemyHealthUI.value = enemy.health; //ui update
+
+        //percent check
+        //make this trigger once....
+        if (enemyHealthUI.value <= 300) //i love hardcoding!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        {
+            Debug.Log("bool swap");
+            phase1 = false;
+            phase2 = true;
+        }
+
         StartCoroutine(TurnDelay());
     }
 

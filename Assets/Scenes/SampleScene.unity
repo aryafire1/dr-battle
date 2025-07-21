@@ -5336,6 +5336,8 @@ MonoBehaviour:
   Event_EnemyDamage:
     m_PersistentCalls:
       m_Calls: []
+  phase1: 0
+  phase2: 0
   playerAnim: {fileID: 257053438}
   koviAnim: {fileID: 1919402564}
 --- !u!114 &1652417301
@@ -5357,6 +5359,25 @@ MonoBehaviour:
   - turn: 1
     attack: {fileID: 998174691}
     flavorText: '* Kovi''s turning up the heat!'
+  - turn: 2
+    attack: {fileID: 998174691}
+    flavorText: attack 2
+  - turn: 3
+    attack: {fileID: 998174691}
+    flavorText: attack 3
+  phase2:
+  - turn: 0
+    attack: {fileID: 998174691}
+    flavorText: phase 2 time
+  - turn: 0
+    attack: {fileID: 998174691}
+    flavorText: phase 2 part 2
+  - turn: 0
+    attack: {fileID: 998174691}
+    flavorText: phase 2 part 3
+  - turn: 0
+    attack: {fileID: 998174691}
+    flavorText: phase 2 part 4
   flavorText: {fileID: 1506112425}
   index: 0
 --- !u!114 &1652417302
